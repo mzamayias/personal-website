@@ -40,7 +40,7 @@ h1 {
         grid-template-columns: repeat(2, minmax(100px, auto));
     }
     .the-interesting-stuff {
-        gap: 0;
+        gap: 0.6em;
     }
 }
 </style>

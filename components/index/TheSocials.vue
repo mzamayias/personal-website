@@ -44,7 +44,7 @@ h1 {
     }
 
     .social-media {
-        gap: 0;
+        gap: 0.6em;
     }
 }
 </style>
