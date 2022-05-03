@@ -2,18 +2,10 @@
 </script>
 
 <template>
-    <div class="index">
-        <TheIntro />
-        <TheSocials />
-        <TheInterestingStuff />
-        <TheFooter />
-    </div>
+    <TheIntro />
+    <TheSocials />
+    <TheInterestingStuff />
 </template>
 
 <style scoped>
-.index {
-    display: grid;
-    align-items: center;
-    height: 100vh;
-}
 </style>
