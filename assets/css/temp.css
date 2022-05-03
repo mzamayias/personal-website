@@ -1,0 +1,116 @@
+:root {
+    /* Theme: Tulip 🌷 */
+    --dark-color-60: #303030;
+    --dark-color-30: #f3f3f3;
+    --dark-color-10: #F9A9DA;
+
+    /* Theme: Cherry Blossom 🌸 */
+    --light-color-60: #f3f3f3;
+    --light-color-30: #303030;
+    --light-color-10: #ec294f;
+
+    /* Dominant color of TypeScript logo */
+    --typescript-logo-color: #0078d4;
+    /* Dominant color of Vue3 logo */
+    --vue-logo-color: #41b883;
+    /* Dominant color of Vite logo */
+    --vite-logo-color: #646cff;
+}
+
+#container {
+    width: clamp(33%, 80%, 1200px);
+}
+
+#app {
+    display: grid;
+    font-family: "JetBrains Mono", monospace;
+    place-items: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+}
+
+#spacer {
+    flex: 0.9;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nuxt-link-active.nuxt-link-exact-active {
+    margin: 0;
+    padding: 0 18px;
+    border-radius: 21px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-color-60);
+        color: var(--dark-color-30);
+    }
+
+    h1,
+    p {
+        color: var(--dark-color-30);
+    }
+
+    a {
+        color: var(--dark-color-10);
+    }
+
+    .inverse-point-of-interest {
+        background-color: var(--dark-color-60);
+        color: var(--dark-color-30);
+        border-color: var(--dark-color-30);
+    }
+
+    .inverse-point-of-interest:hover {
+        background-color: var(--dark-color-10);
+        color: var(--dark-color-60);
+        border-color: var(--dark-color-10);
+    }
+
+    /* Visualize selected navigation bar item */
+    .nuxt-link-active.nuxt-link-exact-active {
+        background-color: var(--dark-color-30);
+        color: var(--dark-color-60);
+        border-color: var(--dark-color-30);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--light-color-60);
+        color: var(--light-color-30);
+    }
+
+    h1,
+    p {
+        color: var(--light-color-30);
+    }
+
+    a {
+        color: var(--light-color-10);
+    }
+
+    .inverse-point-of-interest {
+        background-color: var(--light-color-60);
+        color: var(--light-color-30);
+        border-color: var(--light-color-30);
+    }
+
+    .inverse-point-of-interest:hover {
+        background-color: var(--light-color-10);
+        color: var(--light-color-60);
+        border-color: var(--light-color-10);
+    }
+
+    /* Visualize selected navigation bar item */
+    .nuxt-link-active.nuxt-link-exact-active {
+        background-color: var(--light-color-30);
+        color: var(--light-color-60);
+        border-color: var(--light-color-30);
+    }
+}

@@ -1,0 +1,114 @@
+:root {
+    /* Dark Theme: Light Coral */
+    --dark-color-60: #303030;
+    --dark-color-30: #F3F3F3;
+    --dark-color-10: #f97a7a;
+
+    /* Light Theme: Ruby Red */
+    --light-color-60: #F3F3F3;
+    --light-color-30: #303030;
+    --light-color-10: #981818;
+
+    /* Dominant color of TypeScript logo */
+    --typescript-logo-color: #0078d4;
+    /* Dominant color of Vue3 logo */
+    --vue-logo-color: #41b883;
+    /* Dominant color of Vite logo */
+    --vite-logo-color: #646cff;
+    /* Dominant color of Nuxt3 */
+    --nuxt3-logo-color: #00DC82;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: var(--dark-color-60);
+        --secondary-color: var(--dark-color-30);
+        --action-color: var(--dark-color-10);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-color: var(--light-color-60);
+        --secondary-color: var(--light-color-30);
+        --action-color: var(--light-color-10);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-family: 'JetBrains Mono',
+        monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: auto;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 0;
+    padding: 1.5rem;
+    display: grid;
+    justify-items: center;
+}
+
+h1,
+p {
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration-line: none;
+    font-weight: 900;
+    color: var(--action-color);
+}
+
+.PrimaryButton {
+    transition: all 60ms ease-in-out;
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.PrimaryButton:hover {
+    background-color: var(--action-color);
+    border-color: var(--action-color);
+    color: var(--primary-color);
+}
+
+.ActivePrimaryButton {
+    transition: all 60ms ease-in-out;
+    background-color: var(--action-color);
+    border-color: var(--action-color);
+    color: var(--primary-color);
+}
+
+.ActivePrimaryButton:hover {
+    background-color: var(--action-color);
+    border-color: var(--action-color);
+    color: var(--primary-color);
+}
+
+.TextButton {
+    text-decoration-line: none;
+    padding: 0 18px;
+    border-radius: 21px;
+    border-style: solid;
+    border-width: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.interest {
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 0;
+    color: inherit;
+}
