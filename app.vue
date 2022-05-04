@@ -9,11 +9,12 @@
 
 <style scoped>
 #container {
-    margin: 0;
-    max-width: 992px;
+    max-width: 1200px;
     width: 100%;
     display: grid;
     align-items: center;
     height: 100vh;
+    padding: 0 clamp(1rem, 1.5rem, 3rem);
+    gap: 0;
 }
 </style>

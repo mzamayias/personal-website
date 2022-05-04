@@ -47,14 +47,13 @@ html {
         monospace;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: auto;
 }
 
 body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     margin: 0;
-    padding: 0 1.5rem;
+    padding: 0;
     display: grid;
     justify-items: center;
 }
